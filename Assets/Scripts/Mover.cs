@@ -9,7 +9,7 @@ public class Mover : MonoBehaviour
    
     void Start()
     {
-        
+        printInstruction();
     }
 
     // Update is called once per frame
@@ -20,4 +20,10 @@ public class Mover : MonoBehaviour
         float zValue = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
         transform.Translate(xValue, 0, zValue);
     }
+
+    void printInstruction()
+    {
+        Debug.Log("Testing, Welcome to the game");
+    }
+
 }
