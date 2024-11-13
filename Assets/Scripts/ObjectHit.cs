@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjectHit : MonoBehaviour
 {
+    int Score = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +17,10 @@ public class ObjectHit : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision other)
     {
-        
+        Debug.Log ("bumped into a wall");
+        GetComponent<MeshRenderer>().material.color = Color.white;
+
     }
 }
