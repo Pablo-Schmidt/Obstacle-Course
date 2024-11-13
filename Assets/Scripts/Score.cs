@@ -10,8 +10,10 @@ public class Score : MonoBehaviour
     {
         Hits++;
         Debug.Log("Your Score is now: "+ Hits);
-      
     }
 
-
+    private void Update()
+    {
+   
+    }
 }
