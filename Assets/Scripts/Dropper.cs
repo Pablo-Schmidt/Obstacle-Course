@@ -6,7 +6,8 @@ public class Dropper : MonoBehaviour
 {
     MeshRenderer Renderer;
     Rigidbody rigidbody;
-    [SerializeField]float TimeToWait = 5f;
+        [SerializeField]float TimeToWait = 5f;
+
     // Start is called before the first frame update
     void Start()
     {
